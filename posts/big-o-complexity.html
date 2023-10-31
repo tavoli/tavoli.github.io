@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>big o complexity</title>
+    <style src="/style.css"></style>
+  </head>
+  <body>
+    <h1>big o complexity</h1>
+    <h2>what is that?</h2>
+    <p>The term big o complexity comes from computer science and is used as a tool
+      to measure the efficiency of an algorithm. It means that a code can be measured
+      in terms of what bunch of time is required to run it.</p> 
+    <h3>we can length a algorithm using these sorts of complexity:</h3>
+    <ul>
+      <li>constant - O</li>
+      <p>it means a code that does not change based on the input that it receives.
+      it will always sum up the same time to run. a typical example can be a fn
+      that return a value from a array by a giving index or even a fn that return 
+      a position from that same array.</p>
+      <li>linear - o(n)</li>
+      <p>an algorithm with linear time complexity will have its running time increase proportionally with the size of the input. For every additional input element, a fixed amount of additional computational work is required. A simple real-world example can be rendering rows in an HTML table: the more rows you have, the more time it might take to render them in a browser, assuming each row takes a roughly constant amount of time to render.</p>
+      <li>quadratic - o(n^2)</li>
+      <p>A quadratic algorithm's running time grows proportionally with the square of the input size. For an input size of 4, it will perform 16 operations, for 5 it will perform 25 operations, and so on. This implies that for each element in the input, the algorithm processes the entire input again. A practical example can be an array of persons where the algorithm's goal is to determine for each person if they are the oldest compared to the rest. To do this, the code will iterate over each person and for that individual, loop through the entire list again to verify if they are the oldest.</p>
+    </ul>
+    <h3>why is it important?</h3>
+    <p>it is important because we can write code that is more scalable. we can write code
+      that spend less time to run, meaning that it will be more sheaper and depend 
+      from less cycles to complete the result that is expectable.</p>
+    <h3>important thing to take notice when using this tool</h3>
+    <p>Human time is often more valuable than computer time. By this, I mean that developers can sometimes be tempted by over-perfectionism in their code. The decision to refactor code to make it run faster should be based on the time required for the refactor and the tangible benefits it offers. Before optimizing any part of a system, it's crucial to evaluate whether the improvement will be genuinely worthwhile for the end-user. For instance, consider a commentary system with a feature to sort comments. Imagine realizing you can optimize the code by switching from a quadratic to a linear algorithm. Great! But first, ask yourself a few questions:
+    <ol>
+        <li>How many comments are we discussing? Is it truly worth spending four hours of your time to enhance a feature handling only 100 items? Does shaving off 50ms from the action after optimization truly matter?</li>
+        <li>On which devices does this system run?</li>
+        <li>What network technology are we considering? 4G, 5G?</li>
+    </ol>
+    What truly matters is that any improvement should bring a noticeable and tangible result to the users, and subsequently, to the business. Often, it's more beneficial to invest time in creating meaningful features rather than over-optimizing parts of the system that won't significantly improve the overall application experience.</p>
+  </body>
+</html>
